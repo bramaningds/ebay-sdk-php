@@ -42,7 +42,7 @@ class ResolutionCaseManagementBaseService extends \DTS\eBaySDK\Services\BaseServ
      */
     public function __construct($config, \DTS\eBaySDK\Interfaces\HttpClientInterface $httpClient = null)
     {
-        parent::__construct('http://svcs.ebay.com/services/resolution/v1/ResolutionCaseManagementService', 'https://svcs.sandbox.ebay.com/services/resolutionn/v1/ResolutionCaseManagement', $config, $httpClient);
+        parent::__construct('https://svcs.ebay.com/services/resolution/v1/ResolutionCaseManagementService', 'https://svcs.sandbox.ebay.com/services/resolution/v1/ResolutionCaseManagementService', $config, $httpClient);
     }
 
     public static function getConfigDefinitions()
